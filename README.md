@@ -3,6 +3,4 @@
 
 ## Username/Password Authentication
 
-### FE
- 
 ### BE

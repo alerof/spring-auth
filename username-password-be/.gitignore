@@ -1,0 +1,42 @@
+# Ignore target directory (compiled files)
+target/
+
+# Ignore dependency folder
+*.jar
+*.war
+*.ear
+
+# Ignore IDE files
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+*.sublime-workspace
+
+# Ignore Maven & Gradle build directories
+.mvn/
+.gradle/
+build/
+
+# Ignore logs
+logs/
+*.log
+log/
+
+# Ignore environment variables & config files
+.env
+
+# Ignore database & cache files
+*.db
+*.sqlite
+*.cache
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore generated files
+bin/
+gen/
+out/
