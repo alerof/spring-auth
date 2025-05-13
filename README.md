@@ -1,6 +1,6 @@
 # Spring Security examples
 
-
 ## Username/Password Authentication
 
-### BE
+run backend in 'username-password-be'
+run frontend in 'username-password-fe'

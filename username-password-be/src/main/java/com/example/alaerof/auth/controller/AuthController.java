@@ -4,7 +4,6 @@ import com.example.alaerof.auth.dto.LoginRequest;
 import com.example.alaerof.auth.dto.RegisterRequest;
 import com.example.alaerof.auth.dto.UserDto;
 import com.example.alaerof.auth.service.UserService;
-import com.example.alaerof.task.dto.TaskDto;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.validation.Valid;
@@ -22,8 +21,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.List;
 
 @RestController
 @RequestMapping("/auth")
