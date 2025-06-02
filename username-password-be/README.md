@@ -2,7 +2,13 @@
 
 ## Username/Password Authentication
 
-### DB 
+Based on Spring documentation
+* [Username/Password Authentication](https://docs.spring.io/spring-security/reference/servlet/authentication/index.html)
+* [Basic Authentication](https://docs.spring.io/spring-security/reference/servlet/authentication/passwords/basic.html)
+
+### Run App 
+
+* run BD
 
 podman
 ```
@@ -13,7 +19,19 @@ docker
 docker compose -f db-compose.yaml up
 ```
 
-### run App
+* build App
+
+```
+mvn clean install
+```
+
+* run App
+
+```
+java -jar target/simpleauth-0.0.1-SNAPSHOT.jar
+```
+
+### Check working App
 
 User register
 
@@ -38,6 +56,12 @@ curl -X POST http://localhost:8080/auth/login \
          }'
 ```
 
+Get current user info
+
+```
+curl -X get http://localhost:8080/auth/info
+```
+
 Task create for current user
 
 ```
@@ -58,5 +82,5 @@ curl -X get http://localhost:8080/tasks
 User logout
 
 ```
-curl -X get http://localhost:8080/api/auth/logout
+curl -X get http://localhost:8080/auth/logout
 ```

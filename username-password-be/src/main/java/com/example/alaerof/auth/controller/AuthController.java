@@ -56,7 +56,7 @@ public class AuthController {
         securityContextRepository.saveContext(context, request, response);
     }
 
-    @GetMapping
+    @GetMapping("/info")
     public UserDto getCurrentUser() {
         return userService.getCurrentUserDto();
     }
