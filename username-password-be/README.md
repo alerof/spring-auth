@@ -84,3 +84,5 @@ User logout
 ```
 curl -X get http://localhost:8080/auth/logout
 ```
+
+feature-base
