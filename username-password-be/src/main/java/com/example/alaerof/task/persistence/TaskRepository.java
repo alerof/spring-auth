@@ -9,6 +9,6 @@ import java.util.UUID;
 
 @Repository
 public interface TaskRepository extends JpaRepository<Task, Long> {
-    List<Task> findByUser(UserApp user); // feature 2 E
-    //feature 2 F
+    List<Task> findByUser(UserApp user); // feature 22 G
+    //feature 22 G
 }
