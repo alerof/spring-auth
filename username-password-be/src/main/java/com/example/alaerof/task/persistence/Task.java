@@ -28,7 +28,9 @@ public class Task {
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "task_id_seq")
     @SequenceGenerator(name = "task_id_seq", allocationSize = 1)
     private Long id;
-
+/*
+ feature 1 C
+ */
     @ManyToOne
     @JoinColumn(name = "user_app_id", nullable = false)
     private UserApp user;
